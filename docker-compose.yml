@@ -1,0 +1,14 @@
+services:
+  node:
+    build: .
+    ports:
+      - "18018:18018"
+    environment:
+     
+      KERMA_ADVERTISE: ${KERMA_ADVERTISE:-}
+    volumes:
+      - kerma-data:/data
+    restart: unless-stopped
+
+volumes:
+  kerma-data:

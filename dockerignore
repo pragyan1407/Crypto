@@ -1,0 +1,6 @@
+__pycache__/
+data/
+.venv/
+.git/
+test_*.py
+grader_replay.py
